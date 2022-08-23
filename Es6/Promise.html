@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <h1>Promises</h1>
+    <script>
+        let a="undifind"
+        let PromiseData=new Promise((resolved,reject)=>{
+            setTimeout(()=>{
+            a="hello"
+            resolved("done")
+        },3000)
+        })
+        PromiseData.then(()=>{
+            alert(a)
+        })
+    </script>
+</body>
+</html>

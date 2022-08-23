@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inharitance</title>
+</head>
+<body>
+    <h1>Inharitance</h1>
+    <script>
+        class catagory{
+            dryfruit(){
+                console.log("Almond is a dryfruit")
+            }
+            pomefruit(){
+                console.log("apple is a pomefruit")
+            }
+        }
+        class fruits extends catagory{
+           constructor(){
+               super()
+               console.log("apple")
+           }
+           getFruits(){
+               console.log("you got apple")
+           }
+        }
+        let f1=new fruits;
+        let c1=new catagory;
+        // f1.getFruits()
+        f1.pomefruit()
+        // c1.dryfruit()
+        // c1.pomefruit()
+    </script>
+</body>
+</html>

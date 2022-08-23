@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .new{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+    <h1 id="demo">Hello</h1>
+    <!-- <h2>Hello</h2>
+    <button onclick="myfun()">click me</button>     -->
+  
+    <script>
+        // print stars in traingle in left site
+        // let n = 5;
+        // let string = "";
+        // count = 1;
+        // for (let i = 0; i <= n; i++) {
+        //     // for(let j=0;j<n;j++){//for simple 
+        //     for(let j=0;j<i;j++){//for trangle
+        //         string+="*"
+        //     }
+        //     string+="\n"
+        // }
+        // console.log(string)
+
+        //for right site
+        // for (let i = 1; i <= n; i++) {
+        //     for (let j = 0; j < n - i; j++) {
+        //         string += " ";
+        //     }
+        //     for (let k = 0; k < i; k++) {
+        //         string += "*";
+        //     }
+        //     string += "\n";
+        // }
+        // console.log(string);
+      
+        // for (i = 0; i <= n; i++) {
+        //     for (j = 0; j <= i; j++) {
+        //         string += count
+        //         count++
+        //     }
+        //     string += "\n"
+        // }
+        // console.log(string)
+
+        // top to bottom
+        // for (let i = 1; i < n; i++) {
+        //     for (let k = 0; k < n - i; k++) {
+        //         string += count
+        //         count++
+        //     }
+        //     string += "\n";
+        // }
+        // console.log(string);
+
+
+        // for (let i = 1; i <= n; i++) {
+        //     for (let j = 1; j <= n - i; j++) {
+        //         string += " ";
+        //     }
+        //     for (let k = 0; k < 2 * i - 1; k++) {
+        //         string +=count;
+        //     }
+        //     // count++
+        //     string += "\n";
+        // }
+        // console.log(string);
+
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = 0; j < i; j++) {
+        //         string += " ";
+        //     }
+        //     for (let k = 0; k < 2 * (n - i) - 1; k++) {
+        //         string += "*";
+        //     }
+        //     string += "\n";
+        // }
+        // console.log(string);
+
+        // for (var counter = 0; counter <= 30; counter++) {
+
+        //     var notPrime = false;
+        //     for (var i = 2; i <= counter; i++) {
+        //         if (counter % i === 0 && i !== counter) {
+        //             notPrime = true;
+        //         }
+        //     }
+        //     if (notPrime === false) {
+        //         console.log(counter);
+        //     }
+        // }
+        
+        // let n=20;
+        // for(let i=1;i<=n+1;i++ ){
+        //   if(i%2==0){
+        //       console.log(i)
+        //   }
+        // }
+
+        // let n=5;
+        // let string="";
+
+        // for(let i=1;i<=n;i++){
+        //     for(let j=0;j<n+1;j++){
+        //         string+=""
+            
+        //     }
+        //     for(let k=0;k<i;k++){
+        //         string+="*"
+        //     }
+        //     string+="\n"
+        // }
+        // console.log(string)
+
+// array sort with loop 
+// 1st example
+// function sortArray(arr) {
+// // let arr=[10,20,25,1,30]
+// let t=0;
+// for(let i=0;i<arr.length;i++)
+// {
+//     for(let j=i+1;j<arr.length;j++)
+//     {
+//       if(arr[i]>arr[j]){//arr[10]>arr[1]
+//           t=arr[i]//t=arr[10]
+//           arr[i]=arr[j]//arr[i]=arr[1]
+//           arr[j]=t//arr[j]=10
+//       }
+//     }
+// }
+//     // debugger
+// // console.log(arr)
+// return arr
+// }
+// console.log(sortArray([10,20,25,1,30]));
+
+// second example
+// function sort(arr1){
+//     for(i=0;i<arr1.length;i++){
+//         for(j=i+1;j<arr1.length;j++){
+//             if(arr1[i]>arr1[j]){
+//                 var n=arr1[i]
+//                 arr1[i]=arr1[j]
+//                 arr1[j]=n
+//             }
+//         }
+//     }
+//     return arr1
+// }
+// console.log(sort([2,5,1,9,6,3]))
+//
+
+//  time delay process
+setInterval(
+    function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+},1000);
+ 
+// function myfun(){
+//     // document.getElementById("demo").setAttribute("class","new")//setattribute
+//     //setattributenode
+//         const attr=document.createAttribute("class")
+//         attr.value="new";
+//         const element=document.getElementsByTagName("H2")[0];
+//         element.setAttributeNode(attr)
+// } 
+
+// conform box
+// function Confirmation(){
+//                var Val = confirm("Do you want to continue ?");
+//                if( Val == true ){
+//                   document.write ("CONTINUED!");
+//                   return true;
+//                }
+//                else{
+//                   document.write ("NOT CONTINUED!");
+//                   return false;
+//                }
+//             }
+// 
+//             prompt box
+
+//             function Value(){
+//                var Val = prompt("Enter your name : ", "name");
+//                document.write("You entered : " + Val);
+//             }
+
+
+
+//    </script>
+
+   
+
+   <!-- <p>click me:</p>
+   <input type="button" value="click" onclick="Confirmation()"></input>
+   <input type="button" value="click" onclick="Value()"></input> -->
+</body>
+
+</html>
+
+   </body>
+</html>

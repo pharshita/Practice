@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distructuring</title>
+</head>
+<body>
+    <h1>Distructuring</h1>
+    <script>
+        let fruits=["apple","banana","orange","kiwi"];
+        // let fruit1=fruits[0]
+        // console.log(fruit1)
+
+        // let [fruit1,fruit2]=fruits
+        // let [fruit1,,fruit2,fruit3]=fruits//(,,)skip 1 index
+        // console.log(fruit1)
+        // console.log(fruit2)
+        // console.log(fruit3)
+
+       let[fruit1,...fruitx]=fruits
+    //    let[...fruitx]=fruits
+    //    console.log(fruit1,fruitx)
+    // console.log(fruit1)
+       console.log(fruitx)
+    </script>
+</body>
+</html>

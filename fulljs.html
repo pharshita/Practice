@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    1) variables var,let,const
+        // 2) 1)arithmatic: + - * % / , 2)assignment Operator: = += -= *= /= %= , 3)comparison operator: = == === != !== > < <= >= ?(TURNARY), logical operator: && || !
+        // 3)loops: for,while,do while, for in, for of
+
+        // for(var i=1 ; i<=10 ; i++){
+        //     console.log(i);
+        // }
+
+        // var i =0
+        // while(i<=10){
+        //     console.log(i)
+        //     i++;
+        // }
+
+        // do{
+        //     i++
+        //     console.log(i)
+        // }
+        // while(i<=9)
+
+        //     const obj={
+        //         name:"harshita",
+        //         sname:"patidar",
+        //         age:23,
+        //         email:"1232gmail.com"
+        //     }
+        //     for (var i in obj) {
+        //   document.write( i + " : " + obj[i] + "<br />");
+        // }
+
+        // var arr=["car","bick","truck"]
+        // for (var i in arr)
+        // {
+        //  document.write(arr[i] +"<br/>")
+        // }
+
+        // method
+        // let a=["c","d","v","h","a"]
+        // a.sort()
+        // a.push("f")
+        // a.pop()
+        // a.shift()
+        // a.unshift("q")
+        // a.reverse()
+        // a.splice(0,2) remove starting index
+        // document.write(a)
+        //  Events:- onClick,onChange,onMouseover,MouseEvent
+        // statements:if, if-else
+        // var i=70
+        // if(i==7){
+        //     console.log("hello")
+        // }
+        // else if(i==70){
+        //     console.log("hiii")
+        // }
+        // else{
+        //     console.log("hello world")
+        // }
+
+        //  a= (i==60) ? "true":"false"
+        //   console.log(a)
+
+        // typeof
+        // a="harshita"
+        // typeof(a)
+        // math() method
+        // Math.random()
+        // Math.abs()
+        // Math.abs(67.78)
+        // Math.ceil(67.99)
+        // Math.floor(67.79)
+        // Math.log(-1)//take only positive value
+        // Math.pow(2,3)
+        // b=Math.round(5.4)
+
+        // loop control:- break and continue
+
+        // try {
+        //   alert('try');
+        // } catch (e) {
+        //   alert( 'catch' );
+        // } finally {
+        //   alert( 'finally' );
+        // }    
+
+
+        // callback function
+        // function print_name(name){
+        //     document.write(`your full name is":${name}`)
+        // }
+
+        // function Enter_name(a)
+        // {
+        //     let name=prompt("enter your name")
+        //     a(name);
+        // }
+        // Enter_name(print_name)
+
+
+        // print even no in traingle pattern 
+        // let n = 5; 
+        // let string = "";
+        // let count = 1;
+        // for (let i = 1; i <= n; i++) {
+        //     // debugger
+        //   for (let j = 1; j <=i+i; j++) {
+        //       if(count%2==0){
+        //           string += count;
+        //         }
+        //         count++;
+        //   }
+        //   string += "\n";
+        // }
+        // console.log(string);
+// defualt perametars 
+        // function setValue(){
+        //     return 100;
+        // }
+
+        // function main(a=10, b=setValue()) {
+        //     return a + b
+        // }
+        // console.log(main())
+
+// find and findindex
+        // let data=["10","30","3","9","50"]
+        // let result=data.find((items)=>{ //find value
+        // // let result=data.findIndex((items)=>{ //find index no
+        //      return items<50
+        // })
+        // console.log(result)
+
+        // find how many time repeat in a word in a string  
+
+        var temp = "This is a string.";
+        var count = (temp.match(/s/g)).length;
+        console.log(count)        
+
+
+    </script>
+
+</body>
+
+</html>

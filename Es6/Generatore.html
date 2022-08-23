@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators</title>
+</head>
+<body>
+    <h1>Generators</h1>
+    <button onclick="getsteps()">Go to next step</button>
+    <script>
+        function* steps(){
+            let a=10
+            let b=20
+            console.warn(10+20)
+            yield "step 1 completed"
+            console.warn(10-20)
+            yield "step 2 completed"
+            console.warn(10*20)
+            yield "step 2 completed"
+            return "all steps completed"
+        }
+        let stp=steps();
+        function getsteps(){
+            console.warn(stp.next())
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Find Second Large and second smallest</h1>
+    <script>
+
+        // first method
+
+        //   function Secondlarge(arr){
+        //      let sortarr= arr.sort(function(a,b){
+        //         return b-a
+        //     })
+        //     console.log(sortarr)
+        //     document.write("second largest no is :"+sortarr[1]+"<br/>")
+        //   }
+
+        //   function Secondlowest(arr){
+        //       let sortarr= arr.sort(function(a,b){
+        //           return a-b
+        //         })
+        //         console.log(sortarr)
+        //         document.write("second lowest no is :"+sortarr[1])
+        //     }
+
+        //     Secondlarge([20,30,10,6,60])
+        //     Secondlowest([20,30,90,6,60])
+
+
+    //    second method
+        function Secondlargest(arr1) {
+            for (i = 0; i < arr1.length; i++) {
+                for (j = i + 1; j < arr1.length; j++) {
+                    if (arr1[i] > arr1[j]) {
+                        let n = arr1[i]
+                        arr1[i] = arr1[j]
+                        arr1[j] = n
+                    }
+                }
+            }
+            let a= arr1.pop()
+            
+            return arr1
+        }
+       
+        let findsecval=Secondlargest([2, 5, 1, 9, 6])
+        console.log(findsecval)
+        let maxval=Math.max(...findsecval)   
+            console.log(maxval)
+
+            function secondsamllest(arr1) {
+            for (i = 0; i < arr1.length; i++) {
+                for (j = i + 1; j < arr1.length; j++) {
+                    if (arr1[i] < arr1[j]) {
+                        var n = arr1[i]
+                        arr1[i] = arr1[j]
+                        arr1[j] = n
+                    }
+                }
+            }
+            let a= arr1.pop()
+            
+            return arr1
+        }
+       
+        let findsmallval=secondsamllest([2, 5, 1, 9, 6])
+        console.log(findsmallval)
+        let minval=Math.min(...findsmallval)   
+            console.log(minval)
+
+    </script>
+</body>
+
+</html>

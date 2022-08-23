@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html>
+   <head>
+      <title>Storing Cookies Example</title>
+      <script>
+
+        
+        document.cookie="name=harshita patidar"
+        alert(document.cookie)
+      </script>
+   </head>
+   <body>
+   
+     
+      <h1>hiii</h1>
+   
+   </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Storing Cookies Example</title>
+      <script >
+            function WriteCookie()
+            {
+               if( document.myform.customer.value == "" ){
+                  alert("Enter some value!");
+                  return;
+               }
+               cookievalue= escape(document.myform.customer.value) + ";";
+               document.cookie="name=" + cookievalue;
+               document.write ("Set Cookies : " + "name=" + cookievalue );
+            }
+      </script>
+   </head>
+   <body>
+   
+      <form name="myform">Enter name: <input type="text" name="customer"/>
+         <input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+      </form>
+   
+   </body>
+</html>

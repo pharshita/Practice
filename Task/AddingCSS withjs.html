@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change CSS property</h1>
+    <h3 id="head">Hello World!</h3>
+    <button id="btn" onclick="changeCSS()">Click</button>
+    <script>
+        function changeCSS(){
+            document.getElementById("head").style.color="red";
+            document.getElementById("head").innerHTML="Welcome";
+            document.getElementById("head").style.fontSize="30px";
+            document.getElementById("btn").style.backgroundColor="blue";
+            document.getElementById("btn").style.color="white";
+            document.getElementById("btn").style.padding="5px 20px";
+
+        }
+    </script>
+
+</body>
+</html>
